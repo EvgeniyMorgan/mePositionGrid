@@ -1,6 +1,7 @@
 # TmePositionGrid Component
 
-![TmePositionGrid Preview](preview.png) *(Пример изображения компонента)*
+# Демо
+![TmePositionGrid Preview](preview.png)
 
 ## Описание
 
