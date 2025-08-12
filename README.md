@@ -1,4 +1,4 @@
-# TmePositionGrid Component
+# TmePositionGrid Component for Lazarus
 
 # Демо
 ![TmePositionGrid Preview](preview.png)
