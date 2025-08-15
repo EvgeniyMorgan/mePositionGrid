@@ -5,7 +5,8 @@ unit mePositionGrid;
 interface
 
 uses
-  Classes, SysUtils, Controls, Graphics, ExtCtrls, Buttons, Math, LResources;
+  Classes, SysUtils, Controls, Graphics, ExtCtrls, Buttons, Math, LResources,
+  LCLType;
 
 type
   TGridPosition = (
@@ -78,10 +79,12 @@ end;
 constructor TmePositionGrid.Create(AOwner: TComponent);
 var
   i: Integer;
+  ww, hh: Integer;
 begin
   inherited Create(AOwner);
   ControlStyle := ControlStyle - [csSetCaption];
   BevelOuter := bvNone;
+  Parent := AOwner as TWinControl; // Явно устанавливаем родителя
   FSpacing := 2;
   FButtonSize := 40;
   FStartPosition := gpCenter;
@@ -89,10 +92,34 @@ begin
   FDesignMode := csDesigning in ComponentState;
 
   FSelectionBitmap := TBitmap.Create;
-  FSelectionBitmap.OnChange := @BitmapsChanged;
-  FUnselectionBitmap := TBitmap.Create;
-  FUnselectionBitmap.OnChange := @BitmapsChanged;
 
+  FUnselectionBitmap := TBitmap.Create;
+  FSelectionBitmap.LoadFromLazarusResource('FSelectionBitmap');
+  FUnselectionBitmap.LoadFromLazarusResource('FUnselectionBitmap');
+
+// Создание дефолтных изображений при ошибке
+{  FSelectionBitmap.SetSize(24, 24);
+  FSelectionBitmap.Canvas.Brush.Color := clWhite;
+  FSelectionBitmap.Canvas.Pen.Color := clBlack;
+  FSelectionBitmap.Canvas.Pen.Width := 1;
+  FSelectionBitmap.Canvas.Rectangle(0,0,24,24);
+  FSelectionBitmap.Canvas.FillRect(1, 1, 23, 23);
+
+  FSelectionBitmap.Canvas.Font.Size:=12;
+  FSelectionBitmap.Canvas.Font.Color:=clBlack;
+  FSelectionBitmap.Canvas.Brush.Style:=bsClear;
+  FSelectionBitmap.Canvas.GetTextSize('🗸', ww, hh);
+  FSelectionBitmap.Canvas.TextOut((24-ww) div 2, (24-hh) div 2, '🗸');
+
+  FUnselectionBitmap.SetSize(24, 24);
+  FUnselectionBitmap.Canvas.Brush.Color := clWhite;
+  FUnselectionBitmap.Canvas.Pen.Color := clBlack;
+  FUnselectionBitmap.Canvas.Pen.Width := 1;
+  FUnselectionBitmap.Canvas.Rectangle(0,0,24,24);
+  FUnselectionBitmap.Canvas.FillRect(1, 1, 23, 23);}
+
+  FSelectionBitmap.OnChange := @BitmapsChanged;
+  FUnselectionBitmap.OnChange := @BitmapsChanged;
   FButtonHints := TStringList.Create;
   with TStringList(FButtonHints) do
   begin
@@ -127,6 +154,7 @@ begin
 
   UpdateComponentSize;
   UpdateButtons;
+
 end;
 
 destructor TmePositionGrid.Destroy;
@@ -325,6 +353,7 @@ begin
 end;
 
 initialization
+
   {$I mePositionGrid.lrs}
 
 end.
