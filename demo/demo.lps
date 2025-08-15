@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="demo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udemo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="30" Y="19"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\mePositionGrid.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="319"/>
+        <CursorPos Y="358"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\mePositionGrid.lrs"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udemo.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <CursorPos Y="19"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1527"/>
+        <CursorPos X="3" Y="1468"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\mepositiongrid_lzr.pas"/>
+        <UnitName Value="mePositionGrid_lzr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="13">
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="55" Column="42" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="54" Column="42" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="53" Column="42" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="17"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="52" Column="3" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="53" Column="3" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="52" Column="3" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="9" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="9" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="9" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="9" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="20" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="37" Column="19" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="udemo.pas"/>
+        <Caret Line="9" Column="12"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
