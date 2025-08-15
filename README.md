@@ -1,6 +1,5 @@
 # TmePositionGrid Component for Lazarus
 
-# Демо
 ![image](images/mePositionGrid.gif "Preview")
 
 ## Описание
